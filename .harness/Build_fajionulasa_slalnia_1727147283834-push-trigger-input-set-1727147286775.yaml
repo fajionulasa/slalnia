@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_fajionulasa_slalnia_1727147283834-push-trigger-input-set
+  identifier: Build_fajionulasa_slalnia_1727147283834pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_fajionulasa_slalnia_1727147283834
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
